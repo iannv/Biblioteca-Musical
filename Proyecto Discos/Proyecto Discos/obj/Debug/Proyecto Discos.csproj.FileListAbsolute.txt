@@ -1,0 +1,12 @@
+D:\MaxiPrograma\Nivel 2\Proyecto Discos\Proyecto Discos\Proyecto Discos\bin\Debug\Proyecto Discos.exe.config
+D:\MaxiPrograma\Nivel 2\Proyecto Discos\Proyecto Discos\Proyecto Discos\bin\Debug\Proyecto Discos.exe
+D:\MaxiPrograma\Nivel 2\Proyecto Discos\Proyecto Discos\Proyecto Discos\bin\Debug\Proyecto Discos.pdb
+D:\MaxiPrograma\Nivel 2\Proyecto Discos\Proyecto Discos\Proyecto Discos\obj\Debug\Proyecto Discos.csproj.AssemblyReference.cache
+D:\MaxiPrograma\Nivel 2\Proyecto Discos\Proyecto Discos\Proyecto Discos\obj\Debug\Proyecto_Discos.Forms.frmGrillaDiscos.resources
+D:\MaxiPrograma\Nivel 2\Proyecto Discos\Proyecto Discos\Proyecto Discos\obj\Debug\Proyecto_Discos.frmInicio.resources
+D:\MaxiPrograma\Nivel 2\Proyecto Discos\Proyecto Discos\Proyecto Discos\obj\Debug\Proyecto_Discos.Properties.Resources.resources
+D:\MaxiPrograma\Nivel 2\Proyecto Discos\Proyecto Discos\Proyecto Discos\obj\Debug\Proyecto Discos.csproj.GenerateResource.cache
+D:\MaxiPrograma\Nivel 2\Proyecto Discos\Proyecto Discos\Proyecto Discos\obj\Debug\Proyecto Discos.csproj.CoreCompileInputs.cache
+D:\MaxiPrograma\Nivel 2\Proyecto Discos\Proyecto Discos\Proyecto Discos\obj\Debug\Proyecto Discos.exe
+D:\MaxiPrograma\Nivel 2\Proyecto Discos\Proyecto Discos\Proyecto Discos\obj\Debug\Proyecto Discos.pdb
+D:\MaxiPrograma\Nivel 2\Proyecto Discos\Proyecto Discos\Proyecto Discos\obj\Debug\Proyecto_Discos.Forms.frmAgregarDisco.resources
