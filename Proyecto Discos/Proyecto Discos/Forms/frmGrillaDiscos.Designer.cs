@@ -31,8 +31,9 @@
             this.dgvListado = new System.Windows.Forms.DataGridView();
             this.picDisco = new System.Windows.Forms.PictureBox();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.btnVolver = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDisco)).BeginInit();
             this.SuspendLayout();
@@ -43,7 +44,7 @@
             this.dgvListado.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListado.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvListado.Location = new System.Drawing.Point(12, 125);
+            this.dgvListado.Location = new System.Drawing.Point(12, 258);
             this.dgvListado.MultiSelect = false;
             this.dgvListado.Name = "dgvListado";
             this.dgvListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -53,7 +54,7 @@
             // 
             // picDisco
             // 
-            this.picDisco.Location = new System.Drawing.Point(667, 154);
+            this.picDisco.Location = new System.Drawing.Point(667, 295);
             this.picDisco.Name = "picDisco";
             this.picDisco.Size = new System.Drawing.Size(307, 283);
             this.picDisco.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -67,26 +68,9 @@
             this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(70)))), ((int)(((byte)(90)))));
             this.lblTitulo.Location = new System.Drawing.Point(342, 31);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(314, 45);
+            this.lblTitulo.Size = new System.Drawing.Size(284, 45);
             this.lblTitulo.TabIndex = 2;
-            this.lblTitulo.Text = "LISTADO DE DISCOS";
-            // 
-            // btnVolver
-            // 
-            this.btnVolver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(70)))), ((int)(((byte)(90)))));
-            this.btnVolver.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVolver.FlatAppearance.BorderSize = 0;
-            this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVolver.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnVolver.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
-            this.btnVolver.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnVolver.Location = new System.Drawing.Point(286, 501);
-            this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(186, 48);
-            this.btnVolver.TabIndex = 3;
-            this.btnVolver.Text = "Volver";
-            this.btnVolver.UseVisualStyleBackColor = false;
-            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+            this.lblTitulo.Text = "Listado de albums";
             // 
             // btnAgregar
             // 
@@ -97,28 +81,63 @@
             this.btnAgregar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btnAgregar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
             this.btnAgregar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnAgregar.Location = new System.Drawing.Point(556, 501);
+            this.btnAgregar.Location = new System.Drawing.Point(240, 643);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(186, 48);
+            this.btnAgregar.Size = new System.Drawing.Size(135, 44);
             this.btnAgregar.TabIndex = 4;
             this.btnAgregar.Text = "Agregar Nuevo ";
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(70)))), ((int)(((byte)(90)))));
+            this.btnModificar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnModificar.FlatAppearance.BorderSize = 0;
+            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnModificar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
+            this.btnModificar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnModificar.Location = new System.Drawing.Point(674, 643);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(135, 44);
+            this.btnModificar.TabIndex = 5;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BackColor = System.Drawing.Color.Firebrick;
+            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminar.FlatAppearance.BorderSize = 0;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnEliminar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
+            this.btnEliminar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnEliminar.Location = new System.Drawing.Point(828, 643);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(135, 44);
+            this.btnEliminar.TabIndex = 6;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // frmGrillaDiscos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(984, 561);
+            this.ClientSize = new System.Drawing.Size(984, 700);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.picDisco);
             this.Controls.Add(this.dgvListado);
             this.MinimumSize = new System.Drawing.Size(1000, 600);
             this.Name = "frmGrillaDiscos";
-            this.Text = "GRILLA DE DISCOS";
+            this.Text = "GRILLA DE ALBUMS";
             this.Load += new System.EventHandler(this.frmGrillaDiscos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDisco)).EndInit();
@@ -132,7 +151,8 @@
         private System.Windows.Forms.DataGridView dgvListado;
         private System.Windows.Forms.PictureBox picDisco;
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Button btnEliminar;
     }
 }

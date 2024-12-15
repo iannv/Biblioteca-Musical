@@ -30,6 +30,7 @@ namespace Proyecto_Discos.Forms
             listaDeDiscos = disco.listar();
             dgvListado.DataSource = listaDeDiscos;
             dgvListado.Columns["UrlImagenTapa"].Visible = false;
+            dgvListado.Columns["Id"].Visible = false;
 
             cargarImagen(listaDeDiscos[0].UrlImagenTapa);
         }
@@ -53,18 +54,44 @@ namespace Proyecto_Discos.Forms
             }
         }
 
-        private void btnVolver_Click(object sender, EventArgs e)
-        {
-            Form frmInicio = new frmInicio();
-            frmInicio.Show();
-            this.Hide();
-        }
-
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             Form agregarDisco = new frmAgregarDisco();
             agregarDisco.ShowDialog();
             cargar();
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            Disco seleccionado;
+            seleccionado = (Disco)dgvListado.CurrentRow.DataBoundItem;
+
+            Form modificarDisco = new frmAgregarDisco(seleccionado);
+            modificarDisco.ShowDialog();
+            cargar();
+
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            eliminar();
+        }
+
+        private void eliminar(bool eliminar = false)
+        {
+            DiscoConexion disco = new DiscoConexion();
+            Disco seleccionado;
+            try
+            {
+                DialogResult result = MessageBox.Show("¿Desea eliminar definiticamente?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                if (result == DialogResult.Yes) {
+                    seleccionado = (Disco)dgvListado.CurrentRow.DataBoundItem;
+                    disco.eliminar(seleccionado.Id);
+                    cargar();
+                }
+
+            }
+            catch (Exception ex) { throw ex; }
         }
     }
 }
