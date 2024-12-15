@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Proyecto_Discos.Modelos
 {
-    internal class Disco
+    public class Disco
     {
         public int Id { get; set; }
         public string Titulo { get; set; }

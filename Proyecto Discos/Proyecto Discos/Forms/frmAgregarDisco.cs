@@ -13,18 +13,29 @@ namespace Proyecto_Discos.Forms
 {
     public partial class frmAgregarDisco : Form
     {
+        private Disco disco = null;
         public frmAgregarDisco()
         {
             InitializeComponent();
         }
 
+        public frmAgregarDisco(Disco disco)
+        {
+            InitializeComponent();
+            this.disco = disco;
+            Text = "Modificar album.";
+        }
+
+
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            Disco disco = new Disco();
             DiscoConexion discoConexion = new DiscoConexion();
 
             try
             {
+                if(disco == null)
+                    disco = new Disco();
+
                 disco.Titulo = txtTitulo.Text;
                 disco.FechaLanzamiento = dtpFechaLanzamiento.Value;
                 disco.CantidadCanciones = (int)nudCantidadCanciones.Value;
@@ -32,13 +43,20 @@ namespace Proyecto_Discos.Forms
                 disco.Genero = (Estilo)cmbEstilo.SelectedItem;
                 disco.Edicion = (TipoEdicion)cmbTipoEdicion.SelectedItem;
 
-                discoConexion.agregar(disco);
-                MessageBox.Show("Disco agregado exitosamente");
+                if (disco.Id != 0)
+                {
+                    discoConexion.modificar(disco);
+                    MessageBox.Show("Modificado exitosamente");
+                }
+                else {
+                    discoConexion.agregar(disco);
+                    MessageBox.Show("Agregado exitosamente");
+                }
                 this.Close();
-
             }
             catch (Exception ex) { MessageBox.Show($"Ocurrió un error: {ex.Message}"); }
         }
+
 
 
         private void frmAgregarDisco_Load(object sender, EventArgs e)
@@ -48,8 +66,24 @@ namespace Proyecto_Discos.Forms
             try
             {
                 cmbEstilo.DataSource = generoConexion.listar();
-                cmbTipoEdicion.DataSource = edicionConexion.listar();
+                cmbEstilo.ValueMember = "Id";
+                cmbEstilo.DisplayMember = "Descripcion";
 
+                cmbTipoEdicion.DataSource = edicionConexion.listar();
+                cmbTipoEdicion.ValueMember = "Id";
+                cmbTipoEdicion.DisplayMember = "Descripcion";
+
+
+                if (disco != null)
+                {
+                    txtTitulo.Text = disco.Titulo;
+                    dtpFechaLanzamiento.Value = disco.FechaLanzamiento;
+                    nudCantidadCanciones.Value = disco.CantidadCanciones;
+                    txtTapaDisco.Text = disco.UrlImagenTapa;
+                    cargarImagen(disco.UrlImagenTapa);
+                    cmbEstilo.SelectedValue = disco.Genero.Id;
+                    cmbTipoEdicion.SelectedValue = disco.Edicion.Id;
+                }
 
             }
             catch (Exception ex) { throw ex; }
@@ -77,5 +111,6 @@ namespace Proyecto_Discos.Forms
                 picDisco.Load("https://e7.pngegg.com/pngimages/955/252/png-clipart-white-and-multicolored-music-logo-apple-music-itunes-streaming-media-music-purple-logo-thumbnail.png");
             }
         }
+
     }
 }

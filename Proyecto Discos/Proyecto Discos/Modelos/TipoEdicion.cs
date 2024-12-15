@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Proyecto_Discos.Modelos
 {
-    internal class TipoEdicion
+    public class TipoEdicion
     {
         public int Id { get; set; }
         public string Descripcion { get; set; }

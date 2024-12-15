@@ -129,11 +129,11 @@
             this.btnAgregar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btnAgregar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
             this.btnAgregar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnAgregar.Location = new System.Drawing.Point(140, 397);
+            this.btnAgregar.Location = new System.Drawing.Point(156, 397);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(186, 52);
+            this.btnAgregar.Size = new System.Drawing.Size(152, 52);
             this.btnAgregar.TabIndex = 6;
-            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.Text = "Guardar";
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
@@ -186,9 +186,9 @@
             this.btnCancelar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btnCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
             this.btnCancelar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnCancelar.Location = new System.Drawing.Point(374, 397);
+            this.btnCancelar.Location = new System.Drawing.Point(367, 397);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(186, 52);
+            this.btnCancelar.Size = new System.Drawing.Size(153, 52);
             this.btnCancelar.TabIndex = 7;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -199,6 +199,7 @@
             this.picDisco.Location = new System.Drawing.Point(458, 106);
             this.picDisco.Name = "picDisco";
             this.picDisco.Size = new System.Drawing.Size(206, 199);
+            this.picDisco.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picDisco.TabIndex = 15;
             this.picDisco.TabStop = false;
             // 
@@ -224,7 +225,7 @@
             this.Controls.Add(this.lblTitulo);
             this.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmAgregarDisco";
-            this.Text = "AgregarDisco";
+            this.Text = "NUEVO ALBUM";
             this.Load += new System.EventHandler(this.frmAgregarDisco_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidadCanciones)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDisco)).EndInit();

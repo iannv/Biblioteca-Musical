@@ -23,11 +23,7 @@ namespace Proyecto_Discos
             {
                 conexion.ConnectionString = "server=.\\SQLEXPRESS; database=DISCOS_DB; integrated security=true";
                 comando.CommandType = System.Data.CommandType.Text;
-                comando.CommandText = "" +
-                    "SELECT D.Id,D.Titulo,D.FechaLanzamiento AS Lanzamiento,D.CantidadCanciones,D.UrlImagenTapa,E.Descripcion AS Genero,T.Descripcion AS Edicion " +
-                    "FROM DISCOS AS D, ESTILOS AS E, TIPOSEDICION AS T " +
-                    "WHERE D.IdEstilo = E.Id " +
-                    "AND D.IdTipoEdicion = T.Id;";
+                comando.CommandText = "SELECT D.Id,D.Titulo,D.FechaLanzamiento AS Lanzamiento,D.CantidadCanciones,D.UrlImagenTapa,E.Descripcion AS Genero,T.Descripcion AS Edicion, D.IdEstilo, D.IdTipoEdicion FROM DISCOS AS D, ESTILOS AS E, TIPOSEDICION AS T WHERE D.IdEstilo = E.Id AND D.IdTipoEdicion = T.Id";
                 comando.Connection = conexion;
                 conexion.Open();
                 lector = comando.ExecuteReader();
@@ -41,9 +37,11 @@ namespace Proyecto_Discos
                     disco.UrlImagenTapa = (string)lector["UrlImagenTapa"];
 
                     disco.Genero = new Estilo();
+                    disco.Genero.Id = (int)lector["IdEstilo"];
                     disco.Genero.Descripcion = (string)lector["Genero"];
 
                     disco.Edicion = new TipoEdicion();
+                    disco.Edicion.Id = (int)lector["IdTipoEdicion"];
                     disco.Edicion.Descripcion = (string)lector["Edicion"];
 
 
@@ -73,6 +71,43 @@ namespace Proyecto_Discos
                 datos.setearParametro("@IdEstilo", disco.Genero.Id);
                 datos.setearParametro("@IdTipoEdicion", disco.Edicion.Id);
                 
+
+                datos.ejecutarAccion();
+
+            }
+            catch (Exception ex) { throw ex; }
+        }
+
+
+        // Método para modificar un disco existente
+        public void modificar(Disco disco) {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setearConsulta("UPDATE DISCOS SET Titulo = @titulo, FechaLanzamiento = @fecha, CantidadCanciones = @cantCanc, UrlImagenTapa = @img, IdEstilo = @idEstilo, IdTipoEdicion = @idEdic WHERE Id = @id");
+                datos.setearParametro("@titulo",disco.Titulo);
+                datos.setearParametro("@fecha", disco.FechaLanzamiento);
+                datos.setearParametro("@cantCanc", disco.CantidadCanciones);
+                datos.setearParametro("@img", disco.UrlImagenTapa);
+                datos.setearParametro("@idEstilo", disco.Genero.Id);
+                datos.setearParametro("@idEdic", disco.Edicion.Id);
+                datos.setearParametro("@id", disco.Id);
+
+                datos.ejecutarAccion();
+
+            }
+            catch (Exception ex) { throw ex; }
+        }
+
+
+        // Método para eliminar un disco existente
+        public void eliminar(int id) {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("DELETE FROM DISCOS WHERE ID = @id");
+                datos.setearParametro("@id", id);
 
                 datos.ejecutarAccion();
 
