@@ -43,6 +43,7 @@
             this.lblUrlImg = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.picDisco = new System.Windows.Forms.PictureBox();
+            this.btnEelgirArchivo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidadCanciones)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDisco)).BeginInit();
             this.SuspendLayout();
@@ -84,7 +85,7 @@
             // 
             this.cmbEstilo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEstilo.FormattingEnabled = true;
-            this.cmbEstilo.Location = new System.Drawing.Point(200, 214);
+            this.cmbEstilo.Location = new System.Drawing.Point(200, 261);
             this.cmbEstilo.Name = "cmbEstilo";
             this.cmbEstilo.Size = new System.Drawing.Size(237, 22);
             this.cmbEstilo.TabIndex = 3;
@@ -93,7 +94,7 @@
             // 
             this.cmbTipoEdicion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTipoEdicion.FormattingEnabled = true;
-            this.cmbTipoEdicion.Location = new System.Drawing.Point(200, 265);
+            this.cmbTipoEdicion.Location = new System.Drawing.Point(200, 312);
             this.cmbTipoEdicion.Name = "cmbTipoEdicion";
             this.cmbTipoEdicion.Size = new System.Drawing.Size(237, 22);
             this.cmbTipoEdicion.TabIndex = 4;
@@ -103,7 +104,7 @@
             this.lblEstilo.AutoSize = true;
             this.lblEstilo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEstilo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(70)))), ((int)(((byte)(90)))));
-            this.lblEstilo.Location = new System.Drawing.Point(17, 214);
+            this.lblEstilo.Location = new System.Drawing.Point(17, 261);
             this.lblEstilo.Name = "lblEstilo";
             this.lblEstilo.Size = new System.Drawing.Size(47, 21);
             this.lblEstilo.TabIndex = 5;
@@ -114,7 +115,7 @@
             this.lblEdicion.AutoSize = true;
             this.lblEdicion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEdicion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(70)))), ((int)(((byte)(90)))));
-            this.lblEdicion.Location = new System.Drawing.Point(16, 264);
+            this.lblEdicion.Location = new System.Drawing.Point(16, 311);
             this.lblEdicion.Name = "lblEdicion";
             this.lblEdicion.Size = new System.Drawing.Size(115, 21);
             this.lblEdicion.TabIndex = 6;
@@ -160,7 +161,7 @@
             // 
             // txtTapaDisco
             // 
-            this.txtTapaDisco.Location = new System.Drawing.Point(200, 316);
+            this.txtTapaDisco.Location = new System.Drawing.Point(200, 214);
             this.txtTapaDisco.Name = "txtTapaDisco";
             this.txtTapaDisco.Size = new System.Drawing.Size(237, 21);
             this.txtTapaDisco.TabIndex = 5;
@@ -171,7 +172,7 @@
             this.lblUrlImg.AutoSize = true;
             this.lblUrlImg.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUrlImg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(70)))), ((int)(((byte)(90)))));
-            this.lblUrlImg.Location = new System.Drawing.Point(17, 315);
+            this.lblUrlImg.Location = new System.Drawing.Point(17, 213);
             this.lblUrlImg.Name = "lblUrlImg";
             this.lblUrlImg.Size = new System.Drawing.Size(105, 21);
             this.lblUrlImg.TabIndex = 12;
@@ -196,18 +197,36 @@
             // 
             // picDisco
             // 
-            this.picDisco.Location = new System.Drawing.Point(458, 106);
+            this.picDisco.Location = new System.Drawing.Point(474, 75);
             this.picDisco.Name = "picDisco";
             this.picDisco.Size = new System.Drawing.Size(206, 199);
             this.picDisco.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picDisco.TabIndex = 15;
             this.picDisco.TabStop = false;
             // 
+            // btnEelgirArchivo
+            // 
+            this.btnEelgirArchivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(70)))), ((int)(((byte)(90)))));
+            this.btnEelgirArchivo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEelgirArchivo.FlatAppearance.BorderSize = 0;
+            this.btnEelgirArchivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEelgirArchivo.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnEelgirArchivo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
+            this.btnEelgirArchivo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnEelgirArchivo.Location = new System.Drawing.Point(474, 294);
+            this.btnEelgirArchivo.Name = "btnEelgirArchivo";
+            this.btnEelgirArchivo.Size = new System.Drawing.Size(206, 40);
+            this.btnEelgirArchivo.TabIndex = 16;
+            this.btnEelgirArchivo.Text = "Elegir archivo";
+            this.btnEelgirArchivo.UseVisualStyleBackColor = false;
+            this.btnEelgirArchivo.Click += new System.EventHandler(this.btnEelgirArchivo_Click);
+            // 
             // frmAgregarDisco
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(686, 472);
+            this.ClientSize = new System.Drawing.Size(700, 472);
+            this.Controls.Add(this.btnEelgirArchivo);
             this.Controls.Add(this.picDisco);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.txtTapaDisco);
@@ -251,5 +270,6 @@
         private System.Windows.Forms.Label lblUrlImg;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.PictureBox picDisco;
+        private System.Windows.Forms.Button btnEelgirArchivo;
     }
 }
