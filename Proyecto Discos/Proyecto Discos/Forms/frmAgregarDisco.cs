@@ -4,16 +4,19 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace Proyecto_Discos.Forms
 {
     public partial class frmAgregarDisco : Form
     {
         private Disco disco = null;
+        private OpenFileDialog archivo = null;
         public frmAgregarDisco()
         {
             InitializeComponent();
@@ -52,6 +55,11 @@ namespace Proyecto_Discos.Forms
                     discoConexion.agregar(disco);
                     MessageBox.Show("Agregado exitosamente");
                 }
+
+                // Guarda la img en la carpeta solo si pone aceptar
+                if(archivo != null)
+                    File.Copy(archivo.FileName, ConfigurationManager.AppSettings["discos-imagenes"] + archivo.SafeFileName);
+
                 this.Close();
             }
             catch (Exception ex) { MessageBox.Show($"Ocurrió un error: {ex.Message}"); }
@@ -112,5 +120,14 @@ namespace Proyecto_Discos.Forms
             }
         }
 
+        private void btnEelgirArchivo_Click(object sender, EventArgs e)
+        {
+            archivo = new OpenFileDialog();
+            archivo.Filter = "jpg|*.jpg|png|*.png";
+            if (archivo.ShowDialog() == DialogResult.OK) {
+                txtTapaDisco.Text = archivo.FileName;
+                cargarImagen(archivo.FileName);
+            }
+        }
     }
 }

@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "D:\\MaxiPrograma\\Nivel 2\\Proyecto Discos\\biblioteca-musical\\Proyecto Discos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E69A391D-B9D1-4671-B004-255845561318}|Proyecto Discos\\Proyecto Discos.csproj|D:\\MaxiPrograma\\Nivel 2\\Proyecto Discos\\biblioteca-musical\\Proyecto Discos\\proyecto discos\\forms\\frmgrilladiscos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E69A391D-B9D1-4671-B004-255845561318}|Proyecto Discos\\Proyecto Discos.csproj|solutionrelative:proyecto discos\\forms\\frmgrilladiscos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E69A391D-B9D1-4671-B004-255845561318}|Proyecto Discos\\Proyecto Discos.csproj|d:\\maxiprograma\\nivel 2\\proyecto discos\\biblioteca-musical\\proyecto discos\\proyecto discos\\discoconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E69A391D-B9D1-4671-B004-255845561318}|Proyecto Discos\\Proyecto Discos.csproj|solutionrelative:proyecto discos\\discoconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E69A391D-B9D1-4671-B004-255845561318}|Proyecto Discos\\Proyecto Discos.csproj|D:\\MaxiPrograma\\Nivel 2\\Proyecto Discos\\biblioteca-musical\\Proyecto Discos\\proyecto discos\\forms\\frmgrilladiscos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E69A391D-B9D1-4671-B004-255845561318}|Proyecto Discos\\Proyecto Discos.csproj|solutionrelative:proyecto discos\\forms\\frmgrilladiscos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E69A391D-B9D1-4671-B004-255845561318}|Proyecto Discos\\Proyecto Discos.csproj|D:\\MaxiPrograma\\Nivel 2\\Proyecto Discos\\biblioteca-musical\\Proyecto Discos\\proyecto discos\\forms\\frmagregardisco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E69A391D-B9D1-4671-B004-255845561318}|Proyecto Discos\\Proyecto Discos.csproj|solutionrelative:proyecto discos\\forms\\frmagregardisco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E69A391D-B9D1-4671-B004-255845561318}|Proyecto Discos\\Proyecto Discos.csproj|d:\\maxiprograma\\nivel 2\\proyecto discos\\biblioteca-musical\\proyecto discos\\proyecto discos\\discoconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E69A391D-B9D1-4671-B004-255845561318}|Proyecto Discos\\Proyecto Discos.csproj|solutionrelative:proyecto discos\\discoconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E69A391D-B9D1-4671-B004-255845561318}|Proyecto Discos\\Proyecto Discos.csproj|D:\\MaxiPrograma\\Nivel 2\\Proyecto Discos\\biblioteca-musical\\Proyecto Discos\\proyecto discos\\forms\\frmagregardisco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E69A391D-B9D1-4671-B004-255845561318}|Proyecto Discos\\Proyecto Discos.csproj|solutionrelative:proyecto discos\\forms\\frmagregardisco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E69A391D-B9D1-4671-B004-255845561318}|Proyecto Discos\\Proyecto Discos.csproj|d:\\maxiprograma\\nivel 2\\proyecto discos\\biblioteca-musical\\proyecto discos\\proyecto discos\\forms\\frmgrilladiscos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E69A391D-B9D1-4671-B004-255845561318}|Proyecto Discos\\Proyecto Discos.csproj|solutionrelative:proyecto discos\\forms\\frmgrilladiscos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,19 +22,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "DiscoConexion.cs",
               "DocumentMoniker": "D:\\MaxiPrograma\\Nivel 2\\Proyecto Discos\\biblioteca-musical\\Proyecto Discos\\Proyecto Discos\\DiscoConexion.cs",
               "RelativeDocumentMoniker": "Proyecto Discos\\DiscoConexion.cs",
               "ToolTip": "D:\\MaxiPrograma\\Nivel 2\\Proyecto Discos\\biblioteca-musical\\Proyecto Discos\\Proyecto Discos\\DiscoConexion.cs",
               "RelativeToolTip": "Proyecto Discos\\DiscoConexion.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAswHMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwNcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T21:23:16.435Z",
+              "WhenOpened": "2025-01-12T13:40:15.046Z",
               "EditorCaption": ""
             },
             {
@@ -54,46 +46,21 @@
               "ToolTip": "D:\\MaxiPrograma\\Nivel 2\\Proyecto Discos\\biblioteca-musical\\Proyecto Discos\\Proyecto Discos\\Forms\\frmGrillaDiscos.cs [Dise\u00F1o]",
               "RelativeToolTip": "Proyecto Discos\\Forms\\frmGrillaDiscos.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T20:36:40.458Z",
+              "WhenOpened": "2025-01-11T19:22:45.531Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "frmAgregarDisco.cs",
-              "DocumentMoniker": "D:\\MaxiPrograma\\Nivel 2\\Proyecto Discos\\biblioteca-musical\\Proyecto Discos\\Proyecto Discos\\Forms\\frmAgregarDisco.cs",
-              "RelativeDocumentMoniker": "Proyecto Discos\\Forms\\frmAgregarDisco.cs",
-              "ToolTip": "D:\\MaxiPrograma\\Nivel 2\\Proyecto Discos\\biblioteca-musical\\Proyecto Discos\\Proyecto Discos\\Forms\\frmAgregarDisco.cs",
-              "RelativeToolTip": "Proyecto Discos\\Forms\\frmAgregarDisco.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAUwCoAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T20:36:46.066Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "frmGrillaDiscos.cs",
               "DocumentMoniker": "D:\\MaxiPrograma\\Nivel 2\\Proyecto Discos\\biblioteca-musical\\Proyecto Discos\\Proyecto Discos\\Forms\\frmGrillaDiscos.cs",
               "RelativeDocumentMoniker": "Proyecto Discos\\Forms\\frmGrillaDiscos.cs",
               "ToolTip": "D:\\MaxiPrograma\\Nivel 2\\Proyecto Discos\\biblioteca-musical\\Proyecto Discos\\Proyecto Discos\\Forms\\frmGrillaDiscos.cs",
               "RelativeToolTip": "Proyecto Discos\\Forms\\frmGrillaDiscos.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAgwFMAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T20:36:42.917Z",
+              "WhenOpened": "2024-12-17T00:06:58.82Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmAgregarDisco.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\MaxiPrograma\\Nivel 2\\Proyecto Discos\\biblioteca-musical\\Proyecto Discos\\Proyecto Discos\\Forms\\frmAgregarDisco.cs",
-              "RelativeDocumentMoniker": "Proyecto Discos\\Forms\\frmAgregarDisco.cs",
-              "ToolTip": "D:\\MaxiPrograma\\Nivel 2\\Proyecto Discos\\biblioteca-musical\\Proyecto Discos\\Proyecto Discos\\Forms\\frmAgregarDisco.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Proyecto Discos\\Forms\\frmAgregarDisco.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T20:36:44.232Z",
-              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }
